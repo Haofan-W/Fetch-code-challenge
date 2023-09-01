@@ -112,4 +112,4 @@ Example commmand:
 
 `curl http://localhost:8080/receipts/your-receipt-id/points`
 
-Note: your-receipt-id has to be the id we get from process receipts.
+Note: your-receipt-id has to be the id we get from process receipts and the total points should be 28.
