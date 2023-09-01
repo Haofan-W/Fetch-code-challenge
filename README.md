@@ -11,10 +11,13 @@ Assuming you have already installed Go(https://golang.org/doc/install)
 ## Getting Started
 
 1. Clone the repository:
+
    `git clone https://github.com/Haofan-W/Fetch-code-challenge.git`
+
    `cd Fetch-code-challenge`
 
 2. Run the application with Go:
+
    `go run main.go structs.go receipt_calculator.go`
 
 ## Using the API
@@ -67,4 +70,5 @@ Retrieve the points for a receipt by ID
 Example commmand:
 
 `curl http://localhost:8080/receipts/your-receipt-id/points`
+
 Note: your-receipt-id has to be the id we get from process receipts.
