@@ -1,6 +1,6 @@
 # Receipt Processor
 
-This is a receipt processing web esrvice built in Go. It calculates points based on the
+This is a receipt processing web service built in Go. It calculates points based on the
 rules defined in the challenge and provides endpoints to submit receipts and retrieve
 earned points.
 
