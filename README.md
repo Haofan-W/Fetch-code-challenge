@@ -16,6 +16,14 @@ Assuming you have already installed Go(https://golang.org/doc/install)
 
    `cd Fetch-code-challenge`
 
+### Mac
+
+make sure your mac version is 1.13+ and have xCode and git installed.
+
+### windows
+
+make sure the git bash is installed.
+
 2. Run the application with Go:
 
    `go run main.go structs.go receipt_calculator.go`
@@ -28,7 +36,7 @@ Endpoint: 'POST /receipts/process'
 
 Submit a JSON receipt for processing. The API will return a JSON object containing an ID for the receipt.
 
-Example command:
+### Example command on mac terminal:
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -59,6 +67,39 @@ curl -X POST -H "Content-Type: application/json" -d '{
   ],
   "total": "35.35"
 }' http://localhost:8080/receipts/process
+```
+
+### Example command on git bash:
+
+```
+curl -X POST -H "Content-Type: application/json" -d '{
+  "retailer": "Target",
+  "purchaseDate": "2022-01-01",
+  "purchaseTime": "13:01",
+  "items": [
+    {
+      "shortDescription": "Mountain Dew 12PK",
+      "price": "6.49"
+    },
+    {
+      "shortDescription": "Emils Cheese Pizza",
+      "price": "12.25"
+    },
+    {
+      "shortDescription": "Knorr Creamy Chicken",
+      "price": "1.26"
+    },
+    {
+      "shortDescription": "Doritos Nacho Cheese",
+      "price": "3.35"
+    },
+    {
+      "shortDescription": "Klarbrunn 12-PK 12 FL OZ",
+      "price": "12.00"
+    }
+  ],
+  "total": "35.35"
+}' 'http://localhost:8080/receipts/process'
 ```
 
 ### Get Points
