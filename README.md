@@ -8,6 +8,10 @@ earned points.
 
 Assuming you have already installed Go(https://golang.org/doc/install)
 
+Note: Run `go version` to make sure your computer have go installed.
+If your are sure you have go install, but 'go' command not found, try
+modify your GO path on your device.
+
 ## Getting Started
 
 1. Clone the repository:
